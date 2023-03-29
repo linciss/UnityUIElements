@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 1fbde43486c666c4c8650fdcb97af994
+timeCreated: 1680067299
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Edu NSW ACT Foundation
+  fontNames:
+  - Edu NSW ACT Foundation
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 13c5379d7f0936c48a1e91dcedeea217, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
