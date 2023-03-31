@@ -12,27 +12,32 @@ public class ShowWord : MonoBehaviour {
 
 	public GameObject inputField;
 	public GameObject textField;
-	public GameObject button;
+	public GameObject butt;
 
-	public void SaveText() 
+    
+
+    public void ButtonScript() 
 	{
-		rand = Random.Range(0, greetings.Length);
-		text = inputField.GetComponent<Text>().text;
-		textField.GetComponent<Text>().text = greetings[rand]+text.ToUpper()+"";
-	
+
+		Button button = butt.GetComponent<Button>();
+		button.onClick.AddListener(TaskOnClick);
+
+        
+
+
+    }
+
+	public void TaskOnClick()
+	{ 
+        rand = Random.Range(0, greetings.Length);
+        text = inputField.GetComponent<InputField>().text;
+
+        textField.GetComponent<Text>().text = greetings[rand] + text.ToUpper() + "";
+    }
+
+	public void Update() 
+	{
+	ButtonScript();
 	}
 
-
-
-	// Use this for initialization
-		
-
-	/*void Start () {
-		
-    }
-	
-	// Update is called once per frame
-	void Update () {
-		
-    }*/
 }
